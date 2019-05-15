@@ -54,6 +54,80 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
 }
 
+/* Typography */
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: "Source Sans Pro", sans-serif;
+	font-weight: 300;
+}
+
+header,
+section,
+footer {
+	font-size: 1.6rem;
+}
+
+h1,
+h2 {
+	font-weight: 700;
+}
+
+h3,
+h4 {
+	font-weight: 600;
+}
+
+h1 {
+	font-size: 2.4rem;
+}
+
+h2 {
+	font-size: 2.2rem;
+}
+
+h3 {
+	font-size: 2rem;
+}
+
+h4 {
+	font-size: 1.8rem;
+}
+
+p {
+	line-height: 1.4;
+	margin-bottom: 1.2rem;
+}
+
+/* Layout */
+
+.container {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+header,
+section,
+footer {
+	display: flex;
+}
+
+.column-margin {
+	margin: 0 1%;
+}
+
+.one-third {
+	width: 31%;
+	.column-margin();
+}
+
+.two-thirds {
+	width: 64%;
+	.column-margin();
+}
