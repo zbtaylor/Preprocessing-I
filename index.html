@@ -3,6 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>My Resume</title>
 
@@ -15,29 +16,33 @@
 </head>
 
 <body>
-  <header>
-    <div class="container">
-      <h1>Zach Taylor</h1>
-      <nav>
-        <a href="">Home</a>
-        <a href="">About</a>
-        <a href="">Work</a>
-        <a href="">Contact</a>
-      </nav>
-    </div>
-  </header>
-    <div class="container">
+  <div class="container">
+    <header>
+        <div class="one-third">
+          <h1>Zach Taylor</h1>
+        </div>
+        <nav class="two-thirds">
+          <a href="">Home</a>
+          <a href="">About</a>
+          <a href="">Work</a>
+          <a href="">Contact</a>
+        </nav>
+    </header>
     <section id="hero">
-      Hi, I'm Zach. I'm a full-stack web developer in training at Lambda School.
+      <div class="full-width">
+        <p>Hi, I'm Zach. I'm a full-stack<br>web developer in training at Lambda School.</p>
+      </div>
     </section>
     <section id="about">
       <div class="two-thirds">
-        <h3>About Me</h3>
-        <p>My path to web development started while studying Graphic Design in college. As part of the curriculum we were taught basic HTML and CSS. Can you believe they were still teaching us to use tables for layout back in 2008? In any case, I found this new medium enjoyable but didn't pursue it much further.</p>
+        <h3>About</h3>
+        <hr>
+        <p>My path to web development started while studying Graphic Design in college. As part of the curriculum we were taught basic HTML and CSS. Can you believe they were still teaching us to use tables for layout in 2008? I found this new medium enjoyable but didn't pursue it any further at the time.</p>
         <p>After starting my job hunt I realized a lot of companies wanted designers with some HTML and CSS experience so I decided to bring myself in to the future and figure out how to do layout with something other than a table. Eventually I was hired and built a few small websites for my company and realized I enjoyed building them more than designing flyers and brochures.</p>
       </div>
-      <div class="one-third">
-        <h4>Skills</h4>
+      <div class="one-third sidebar">
+        <h3>Skills</h3>
+        <hr>
         <ul>
           <li>JavaScript</li>
           <li>WordPress</li>
@@ -47,44 +52,57 @@
       </div>
     </section>
     <section id="work">
-      <h3>Work</h3>
-      <article>
+      <div class="full-width">
+        <h3>Work</h3>
+        <hr>
+      </div>
+      <div class="full-width">
         <h4>GP Strategies</h4>
-        <p>2015 - Present</p>
-        <p>Work info here.</p>
-      </article>
-      <article>
+        <span class="date">2015 - Present</span>
+        <p>My role has morphed significantly during my time here and I continue to wear many hats. Originally hired to build a responsive and cross-browser compatible "skin" for our eLearning lessons, I have since been involved with projects ranging from interactive PDF design to platform support agent.</p>
+      </div>
+      <div class="full-width">
         <h4>Hit Me SEO</h4>
-        <p>2013 - 2015</p>
-        <p>Work info here.</p>
-      </article>
-      <article>
+        <span class="date">2013 - 2015</span>
+        <p>I spent the majority of my time here building WordPress websites for numerous small businesses. Sometimes designing the sites from scratch myself, other times using premium templates.</p>
+      </div>
+      <div class="full-width">
         <h4>Devaney & Associates</h4>
-        <p>2012-2013</p>
-        <p>Work info here.</p>
-      </article>
+        <span class="date">2012 - 2013</span>
+        <p>Much of my work for Devaney was centered around print design. However we did get the occasional website project where I was given the opportunity to implement the designs my art director had created.</p>
+      </div>
     </section>
     <section id="contact">
-      <div class="one-third">
-        <p>(410) 205-9607‬</p>
-        <p>hello@zachtaylor.dev</p>
+      <div class="full-width">
+        <h3>Contact</h3>
+        <hr>
       </div>
       <div class="two-thirds">
         <form>
-          <label for="name">Name:</label>
-          <input type="text" id="name" placeholder="Jane Doe" />
-          <label for="email">Email"</label>
-          <input type="email" id="email" placeholder="jane@company.com" />
-          <label for="message">Message:</label>
-          <textarea></textarea>
+          <div class="half">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Jane Doe" />
+          </div>
+          <div class="half">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="jane@company.com" />
+          </div>
+          <div class="full-width">
+            <label for="message">Message:</label>
+            <textarea placeholder="Hello!"></textarea>
+            <input type="submit" value="Send" />
+          </div>
         </form>
       </div>
+      <div class="one-third sidebar">
+        <p>Prefer to talk directly?</p>
+          <p>Phone: <a href="tel:4102059607">(410) 205-9607‬</a></p>
+          <p>Email: <a href="mailto:hello@zachtaylor.dev">hello@zachtaylor.dev</a></p>
+        </div>
     </section>
-  </div>
-  <footer>
-    <div class="container">
+    <footer class="full-width">
       <p>&copy; Zach Taylor 2019</p>
-    </div>
-  </footer>
+    </footer>
+  </div>
 </body>
 </html>
